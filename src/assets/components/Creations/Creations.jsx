@@ -8,9 +8,9 @@ function Creations() {
   const [ isMobile, setIsMobile ] = useState(window.innerWidth < 768);
 
   useEffect(() => {
-    const laodData = async () => {
+    const loadData = async () => {
       try {
-        const res = await fetch("/public/data/data.json");
+        const res = await fetch("./data/data.json");
         const data = await res.json();
         setCreations(data);
       } catch(error) {
@@ -18,7 +18,7 @@ function Creations() {
       }
     }
 
-    laodData();
+    loadData();
   }, [])
 
   useEffect(() => {
@@ -37,7 +37,7 @@ function Creations() {
     return () => {
       window.removeEventListener('resize', handleResize);
     }
-  })
+  }, [])
   
 
   return(
