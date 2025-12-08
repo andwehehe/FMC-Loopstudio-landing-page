@@ -10,7 +10,7 @@ function Creations() {
   useEffect(() => {
     const laodData = async () => {
       try {
-        const res = await fetch("/data/data.json");
+        const res = await fetch("/public/data/data.json");
         const data = await res.json();
         setCreations(data);
       } catch(error) {
