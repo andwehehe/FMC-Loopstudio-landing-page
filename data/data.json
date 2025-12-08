@@ -2,64 +2,64 @@
   {
     "title": "DEEP EARTH",
     "imageSRC": {
-      "mobile": "./src/assets/images/mobile/image-deep-earth.jpg",
-      "desktop": "./src/assets/images/desktop/image-deep-earth.jpg"
+      "mobile": "./assets/images/mobile/image-deep-earth.jpg",
+      "desktop": "./assets/images/desktop/image-deep-earth.jpg"
     },
     "key": "deepEarth"
   },
   {
     "title": "NIGHT ARCADE",
     "imageSRC": {
-      "mobile": "./src/assets/images/mobile/image-night-arcade.jpg",
-      "desktop": "./src/assets/images/desktop/image-night-arcade.jpg"
+      "mobile": "./assets/images/mobile/image-night-arcade.jpg",
+      "desktop": "./assets/images/desktop/image-night-arcade.jpg"
     },
     "key": "nightArcade"
   },
   {
     "title": "SOCCER TEAM VR",
     "imageSRC": {
-      "mobile": "./src/assets/images/mobile/image-soccer-team.jpg",
-      "desktop": "./src/assets/images/desktop/image-soccer-team.jpg"
+      "mobile": "./assets/images/mobile/image-soccer-team.jpg",
+      "desktop": "./assets/images/desktop/image-soccer-team.jpg"
     },
     "key": "soccerTeamVr"
   },
   {
     "title": "THE GRID",
     "imageSRC": {
-      "mobile": "./src/assets/images/mobile/image-grid.jpg",
-      "desktop": "./src/assets/images/desktop/image-grid.jpg"
+      "mobile": "./assets/images/mobile/image-grid.jpg",
+      "desktop": "./assets/images/desktop/image-grid.jpg"
     },
     "key": "theGrid"
   },
   {
     "title": "FROM UP ABOVE VR",
     "imageSRC": {
-      "mobile": "./src/assets/images/mobile/image-from-above.jpg",
-      "desktop": "./src/assets/images/desktop/image-from-above.jpg"
+      "mobile": "./assets/images/mobile/image-from-above.jpg",
+      "desktop": "./assets/images/desktop/image-from-above.jpg"
     },
     "key": "fromUpAboveVr"
   },
   {
     "title": "POCKET BOREALIS",
     "imageSRC": {
-      "mobile": "./src/assets/images/mobile/image-pocket-borealis.jpg",
-      "desktop": "./src/assets/images/desktop/image-pocket-borealis.jpg"
+      "mobile": "./assets/images/mobile/image-pocket-borealis.jpg",
+      "desktop": "./assets/images/desktop/image-pocket-borealis.jpg"
     },
     "key": "pocketBorealis"
   },
   {
     "title": "THE CURIOSITY",
     "imageSRC": {
-      "mobile": "./src/assets/images/mobile/image-curiosity.jpg",
-      "desktop": "./src/assets/images/desktop/image-curiosity.jpg"
+      "mobile": "./assets/images/mobile/image-curiosity.jpg",
+      "desktop": "./assets/images/desktop/image-curiosity.jpg"
     },
     "key": "theCuriosity"
   },
   {
     "title": "MAKE IT FISHEYE",
     "imageSRC": {
-      "mobile": "./src/assets/images/mobile/image-fisheye.jpg",
-      "desktop": "./src/assets/images/desktop/image-fisheye.jpg"
+      "mobile": "./assets/images/mobile/image-fisheye.jpg",
+      "desktop": "./assets/images/desktop/image-fisheye.jpg"
     },
     "key": "makeItFisheye"
   }
