@@ -1,0 +1,25 @@
+.heroSection {
+  background-image: url("/src/assets/images/mobile/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 2.5rem 1.3rem 2.5rem 1.3rem;
+}
+
+.logoMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 9rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: var(--fw-300);
+  color: var(--White);
+  padding: 1.5rem 1.5rem 0.9rem 1.5rem;
+  margin-block: 10.1rem 11.4rem;
+  border: solid var(--White) 0.15rem;
+}
