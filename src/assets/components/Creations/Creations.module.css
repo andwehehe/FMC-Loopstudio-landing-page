@@ -8,8 +8,9 @@
 }
 
 .creationTitle {
-  font-size: 2.1rem;
+  font-size: clamp(1.8rem, 7vw, 2.2rem);
   font-weight: var(--fw-300);
+  text-align: center;
   margin-block-end: 3rem;
 }
 
@@ -31,7 +32,7 @@
 }
 
 .cardTitle {
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 7vw, 3rem);
   font-weight: var(--fw-300);
   color: var(--White);
   position: absolute;
@@ -51,7 +52,8 @@
 
 .seeAllBtn {
   letter-spacing: 0.2rem;
-  padding: 0.8rem 2.8rem 0.6rem 2.8rem;
+  padding-block: 0.8rem 0.6rem;
   border: solid black 0.1rem;
   margin-block: 2rem;
+  width: 50%;
 }

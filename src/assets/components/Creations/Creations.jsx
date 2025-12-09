@@ -2,10 +2,9 @@ import styles from "./Creations.module.css"
 import { useState, useEffect } from "react"
 
 
-function Creations() {
+function Creations({ isMobile }) {
   
   const [ creations, setCreations ] = useState([]);
-  const [ isMobile, setIsMobile ] = useState(window.innerWidth < 768);
 
   useEffect(() => {
     const loadData = async () => {
@@ -20,26 +19,7 @@ function Creations() {
 
     loadData();
   }, [])
-
-  useEffect(() => {
-    const handleResize = () => {
-      if(window.innerWidth < 768) {
-        setIsMobile(true);
-      } else {
-        setIsMobile(false);
-      }
-    }
-
-    
-    window.addEventListener('resize', handleResize);
-    handleResize();
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    }
-  }, [])
   
-
   return(
     <section className={styles.creationsSection}>
 

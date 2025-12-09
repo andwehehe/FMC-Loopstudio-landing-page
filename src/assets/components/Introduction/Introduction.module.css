@@ -7,16 +7,55 @@
 }
 
 .introTitle {
-  font-size: 2.1rem;
+  font-size: clamp(1.8rem, 7vw, 2.2rem);
   font-weight: var(--fw-300);
   text-align: center;
   margin-block: 3rem 1rem;
 }
 
+.introInfo {
+  background-color: var(--White);
+}
+
 .introDescription {
   font-family: 'Alata', sans-serif;
+  font-size: clamp(1rem, 4vw, 1.5rem);
   font-weight: var(--fw-300);
   color: var(--Grey-200);
   text-align: center;
   line-height: 1.5;
+  max-width: 40rem;
+}
+
+@media (min-width: 90rem) {
+  .introductionComponent {
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    margin-inline: auto;
+    width: 75vw;
+  }
+
+  .introInfo {
+    position: absolute;
+    right: 0%;
+    bottom: 14.8%;
+    padding-block-start: 1rem;
+    padding-inline-start: 5rem;
+    width: 50%;
+  }
+
+  .introTitle {
+    text-align: left;
+    font-size: 2.5rem;
+  }
+
+  .introDescription {
+    text-align: left;
+    font-size: 0.98rem;
+  }
+
+  .introImg {
+    margin-inline-end: 23rem;
+  }
 }
