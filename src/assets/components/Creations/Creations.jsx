@@ -23,22 +23,20 @@ function Creations({ isMobile }) {
   return(
     <section className={styles.creationsSection}>
 
-      <h2 className={styles.creationTitle}>OUR CREATIONS</h2>
+      <div className={styles.titleButton}>
+        <h2 className={styles.creationTitle}>OUR CREATIONS</h2>
+
+        <button 
+          type="submit"
+          className={`${styles.seeAllBtn} ${styles.seeAllBtnTop}`}
+        >SEE ALL</button>
+      </div>
 
       <div className={styles.creations}>
         {
           creations.map(creation => {
             const { title, imageSRC, key } = creation;
             const { mobile, desktop } = imageSRC;
-            let correctImage;
-
-            if(isMobile) {
-              correctImage = mobile;
-            } else {
-              correctImage = desktop;
-            }
-
-            
 
             return(
               <div
@@ -46,7 +44,7 @@ function Creations({ isMobile }) {
                 className={styles.cards}
               >
 
-                <img src={correctImage} alt={title} />
+                <img src={isMobile ? mobile : desktop} alt={title} />
                 <p className={`${styles.cardTitle} ${styles[key]}`}> {title} </p>
 
               </div>

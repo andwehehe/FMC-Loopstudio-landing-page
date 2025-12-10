@@ -11,6 +11,8 @@
   font-weight: var(--fw-300);
   text-align: center;
   margin-block: 3rem 1rem;
+  margin-block-start: clamp(3rem, 3vw, 7rem);
+  margin-block-end: clamp(1rem, 1.3vw, 2.5rem);
 }
 
 .introInfo {
@@ -27,35 +29,47 @@
   max-width: 40rem;
 }
 
+.moleBr {
+  display: none;
+}
+
 @media (min-width: 90rem) {
   .introductionComponent {
     position: relative;
     flex-direction: row;
     justify-content: center;
     margin-inline: auto;
-    width: 75vw;
+    margin-block-start: clamp(3rem, 2.5vw, 10rem);
+    width: 90vw;
   }
 
   .introInfo {
     position: absolute;
-    right: 0%;
-    bottom: 14.8%;
-    padding-block-start: 1rem;
-    padding-inline-start: 5rem;
+    right: 1.2rem;
+    bottom: 5.9rem;
+    padding-block-start: clamp(2.5rem, 3vw, 5rem);
+    padding-inline-start: clamp(5rem, 5vw, 8rem);
     width: 50%;
   }
 
   .introTitle {
     text-align: left;
-    font-size: 2.5rem;
+    font-size: clamp(3rem, 3.2vw, 5rem);
   }
 
   .introDescription {
     text-align: left;
-    font-size: 0.98rem;
+    font-size: clamp(0.96rem, 1.06vw, 2rem);
+    max-width: clamp(28rem, 30vw, 50rem);
   }
 
   .introImg {
-    margin-inline-end: 23rem;
+    margin-inline-end: 50rem;
+    margin-inline-end: clamp(26rem, 28vw, 50rem);
+    width: 55%;
+  }
+
+  .moleBr {
+    display: block;
   }
 }

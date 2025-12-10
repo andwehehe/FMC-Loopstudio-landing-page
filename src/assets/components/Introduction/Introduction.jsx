@@ -13,7 +13,7 @@ function Introduction() {
 
       <div className={styles.introInfo}>
         <h2 className={styles.introTitle}> 
-          THE LEADER IN INTERACTIVE VR
+          THE LEADER IN <br className={styles.moleBr}/> INTERACTIVE VR
         </h2>
 
         <p className={styles.introDescription}>
