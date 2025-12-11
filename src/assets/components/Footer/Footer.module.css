@@ -9,6 +9,14 @@
   background-color: var(--Black);
 }
 
+.leftFooterSection,
+.rightFooterSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo {
   width: 8.5rem;
 }
@@ -32,4 +40,62 @@
 .credits {
   color: var(--Grey-200);
   margin-block-start: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 12vw;
+  }
+
+  .leftFooterSection {
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .rightFooterSection {
+    align-items: flex-end;
+    gap: 2rem;
+  }
+
+  .navBar ul {
+    flex-direction: row;
+    gap: 1.8rem;
+  }
+
+  .navBar {
+    margin: 0;
+  }
+
+  .credits {
+    margin: 0;
+  }
+}
+
+.navBar ul li::after {
+  content: "";
+  display: block;
+  margin-block-start: 0.55rem;
+  width: 100%;
+  height: 0.15rem;
+}
+
+/* Hover effects */
+.navBar ul li:hover::after {
+  content: "";
+  display: block;
+  margin-inline: auto;
+  margin-block-start: 0.55rem;
+  width: 50%;
+  height: 0.15rem;
+  background-color: var(--White);
+}
+
+.navBar ul li:hover {
+  cursor: pointer;
+}
+
+.socials:hover {
+  cursor: pointer;
 }

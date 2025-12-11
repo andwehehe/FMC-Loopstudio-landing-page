@@ -45,7 +45,9 @@ function Creations({ isMobile }) {
               >
 
                 <img src={isMobile ? mobile : desktop} alt={title} />
-                <p className={`${styles.cardTitle} ${styles[key]}`}> {title} </p>
+                <div className={styles.shadowBackground}>
+                  <p className={`${styles.cardTitle} ${styles[key]}`}> {title} </p>
+                </div>
 
               </div>
             );

@@ -9,30 +9,34 @@ function Footer() {
 
   return(
     <footer className={styles.footer}>
-      <img 
-        src={logo} 
-        alt="logo"
-        className={styles.logo}
-      />
+      <div className={styles.leftFooterSection}>
+        <img 
+          src={logo} 
+          alt="logo"
+          className={styles.logo}
+        />
 
-      <nav className={styles.navBar}>
-        <ul>
-          <li>About</li>
-          <li>Careers</li>
-          <li>Events</li>
-          <li>Products</li>
-          <li>Support</li>
-        </ul>
-      </nav>
+        <nav className={styles.navBar}>
+          <ul>
+            <li>About</li>
+            <li>Careers</li>
+            <li>Events</li>
+            <li>Products</li>
+            <li>Support</li>
+          </ul>
+        </nav>
+      </div>
 
-      <section className={styles.socials}>
-        <img src={facebook} alt="facebook" />
-        <img src={twitter} alt="twitter" />
-        <img src={pinterest} alt="pinterest" />
-        <img src={instagram} alt="instagram" />
-      </section>
+      <div className={styles.rightFooterSection}>
+        <section className={styles.socials}>
+          <img src={facebook} alt="facebook" />
+          <img src={twitter} alt="twitter" />
+          <img src={pinterest} alt="pinterest" />
+          <img src={instagram} alt="instagram" />
+        </section>
 
-      <p className={styles.credits}>© 202 | Loopstudios. All rights reserved.</p>
+        <p className={styles.credits}>© 202 | Loopstudios. All rights reserved.</p>
+      </div>
     </footer>
   );
 }

@@ -67,3 +67,7 @@ input, button, textarea, select {
 body {
   font-family: 'Josefin Sans', sans-serif;
 }
+
+.fixedBody {
+  position: fixed;
+}

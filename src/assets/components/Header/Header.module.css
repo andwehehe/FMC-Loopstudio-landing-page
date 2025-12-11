@@ -46,10 +46,61 @@
   gap: clamp(1rem, 2.3vw, 2rem);
 }
 
-@media (min-width: 48rem) {
+/* Overlay Menu Start */
+.menuOverlay {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 3;
+  width: 100%;
+  height: 100vh;
+  padding: 3rem 2rem;
+  background-color: black;
+}
 
+.logoClose {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closeMenu {
+  cursor: pointer;
+  width: 1.5rem;
+}
+
+.logoOverlay {
+  width: 10rem;
+}
+
+.menuNavOverlay ul {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: var(--fw-300);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-block-start: 10rem;
+}
+
+.menuNavOverlay ul li {
+  border-bottom: solid 0.15rem transparent;
+  width: max-content;
+}
+
+.menuNavOverlay ul li:hover {
+  cursor: pointer;
+  border-bottom: solid 0.15rem var(--White);
+}
+/* Overlay Menu End */
+
+@media (min-width: 48rem) {
   .heroSection {
     padding-inline: 11.5vw;
+  }
+
+  .menuNav {
+    margin-block-start: 0.5rem;
   }
 
   .title {
@@ -60,5 +111,28 @@
 
   .moleBr {
     display: none;
+  }
+
+  .menuNav ul li::after {
+    content: "";
+    display: block;
+    margin-block-start: 0.55rem;
+    width: 100%;
+    height: 0.15rem;
+  }
+
+  /* Hover effects */
+  .menuNav ul li:hover::after {
+    content: "";
+    display: block;
+    margin-inline: auto;
+    margin-block-start: 0.55rem;
+    width: 50%;
+    height: 0.15rem;
+    background-color: var(--White);
+  }
+
+  .menuNav ul li:hover {
+    cursor: pointer;
   }
 }
